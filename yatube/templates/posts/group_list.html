@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 <!DOCTYPE html> <!-- Используется html 5 версии -->
 <html lang="ru"> <!-- Язык сайта - русский -->
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>
       {% block title %}
-        Лев Толстой – зеркало русской революции.
+        {{ title }}
       {% endblock %} 
     </title>
   </head>
