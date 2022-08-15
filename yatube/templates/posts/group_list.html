@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>
       {% block title %}
-        {{ group }}
+        Записи сообщества {{ group }}
       {% endblock %} 
     </title>
   </head>
@@ -37,7 +37,7 @@
       </ul>
       <p>{{ post.text }}</p>    
       {% if post.group %}   
-        <a href="{% url 'posts:group_posts' post.group.slug %}">все записи группы</a>
+        <a href="{% url 'posts:group_list' post.group.slug %}">все записи группы</a>
       {% endif %}
       {% if not forloop.last %}<hr>{% endif %}
     {% endfor %} 
